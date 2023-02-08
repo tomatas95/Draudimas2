@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 class Car extends Model
 {
     use HasFactory;
-
+   
     public function owners()
     {
         return $this->belongsTo(Owners::class);
